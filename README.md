@@ -72,3 +72,11 @@ src -- 源码目录
 [Apache License 2.0](https://github.com/macrozheng/mall-admin-web/blob/master/LICENSE)
 
 Copyright (c) 2018-2020 macrozheng
+
+## 本地搭建遇到问题
+1. 设置淘宝镜像：npm config set registry https://registry.npm.taobao.org 
+2. npm install node-pre-gyp -g
+3. npm run dev 报错：getaddrinfo ENOTFOUND localhost
+~~~
+hosts文件添加: 127.0.0.1 localhost
+~~~
